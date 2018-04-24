@@ -1,5 +1,9 @@
 # safeDrive
 The app is as simple as it sounds. It is aimed at road safety, that ensures the safety of the driver.
+
+<img src="https://github.com/ag7775/safeDrive/blob/master/Screenshot_2018-04-11-19-22-28-791_com.wkdnotes.root.safedrivescratch.png"  height="300"> <img src="https://github.com/ag7775/safeDrive/blob/master/Screenshot_2018-04-11-19-22-46-323_com.wkdnotes.root.safedrivescratch.png" height="300"> <img src="https://github.com/ag7775/safeDrive/blob/master/Screenshot_2018-04-11-19-22-43-261_com.wkdnotes.root.safedrivescratch.png" height="300"> <img src="https://github.com/ag7775/safeDrive/blob/master/Screenshot_2018-04-11-19-24-07-137_com.wkdnotes.root.safedrivescratch.png" height="300">
+
+ 
 # Features: (Internet independent)
 1) Auto-enablement of Do Not Disturb mode when speed-limit is triggered.
 2) Warning-speed alert on crossing a certain speed limit.
@@ -11,6 +15,8 @@ The app is as simple as it sounds. It is aimed at road safety, that ensures the 
 * It supports a map service where the user can track his covered path and check the traffic in route. It also has the functionality of navigating to a particular destination. (Powered by google maps)
 (Internet dependent)
 # Accident Probability Determination (Show Stopper) : 
-Taking into consideration two factors based on speed and orientation, we determine the probability of the driver being involved in an accident, and if required, it triggers a distress call to SOS numbers immediately ensuring quick help.
+* Taking into consideration two factors based on speed and orientation, we determine the probability of the driver being involved in an accident, and if required, it triggers a distress call to SOS numbers immediately ensuring quick help.
 # Demo
-[!saDrive - Example1](https://github.com/ag7775/safeDrive/blob/master/safe_drive_demo.mp4)
+[safeDrive Demo](https://github.com/ag7775/safeDrive/blob/master/safe_drive_demo.mp4)
+# Playstore Link
+* coming soon.......
