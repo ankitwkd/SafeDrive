@@ -12,3 +12,5 @@ The app is as simple as it sounds. It is aimed at road safety, that ensures the 
 (Internet dependent)
 # Accident Probability Determination (Show Stopper) : 
 Taking into consideration two factors based on speed and orientation, we determine the probability of the driver being involved in an accident, and if required, it triggers a distress call to SOS numbers immediately ensuring quick help.
+# Demo
+[!saDrive - Example1](https://github.com/ag7775/safeDrive/blob/master/safe_drive_demo.mp4)
