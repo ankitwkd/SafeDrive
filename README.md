@@ -19,4 +19,4 @@ The app is as simple as it sounds. It is aimed at road safety, that ensures the 
 # Demo
 [safeDrive Demo](https://github.com/ag7775/safeDrive/blob/master/safe_drive_demo.mp4)
 # Playstore Link
-* ![SafeDrive](https://play.google.com/store/apps/details?id=com.wkdnotes.root.safedrivescratch)
+* [SafeDrive](https://play.google.com/store/apps/details?id=com.wkdnotes.root.safedrivescratch)
