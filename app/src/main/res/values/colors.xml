@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_light">#03A9F4</color>
+    <color name="blue">#1E88E5</color>
+    <color name="blue_dark">#01579B</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000000</color>
+    <color name="lightpink">#ffe6e6</color>
+    <color name="grey_lighter">#E0E0E0</color>
+    <color name="red">#F44336</color>
+    <color name="grey_dim">#696969</color>
+    <color name="cyan_darker">#00ffff</color>
+    <color name="navy">#00394D</color>
+    <color name="orange">#e68a00</color>
+    <color name="lightgreen">#0030</color>
+
+    <!--Alphabets Color-->
+    <color name="A">#F6ADC6</color>
+    <color name="B">#D7837F	</color>
+    <color name="C">#727472</color>
+    <color name="D">#E4000F</color>
+    <color name="E">#A4DDED</color>
+    <color name="F">#059033</color>
+    <color name="G">#E9FFDB</color>
+    <color name="H">#4F42B5</color>
+    <color name="I">#0077BE</color>
+    <color name="J">#48BF91</color>
+    <color name="K">#CC7722</color>
+    <color name="L">#008000</color>
+    <color name="M">#FD5240</color>
+    <color name="N">#43302E</color>
+    <color name="O">#CFB53B</color>
+    <color name="P">#563C5C</color>
+    <color name="Q">#FDF5E6</color>
+    <color name="R">#796878</color>
+    <color name="S">#002147</color>
+    <color name="T">#FA5B3D</color>
+    <color name="U">#87D3F8</color>
+    <color name="V">#6D9A79</color>
+    <color name="W">#F9FFE3</color>
+    <color name="X">#E12C2C</color>
+    <color name="Y">#00CCCC</color>
+    <color name="Z">#FFA500</color>
+    <!---->
+    <color name="list_normal_state">#ffffff</color>
+    <color name="list_selected_state">#f9f</color>
+    <color name="list_item_selected_state">#F4F6F6</color>
+    <color name="list_divider">#979797</color>
+    <color name="list_item_normal_state">#FFFFFF</color>
+    <color name="primary">#2d2d2d</color>
+    <color name="secondary">#FF4081</color>
+    <color name="accent">#33b5e5</color>
+    <color name="divider">#CCC</color>
+    <color name="icons">#FFF</color>
+    <color name="item_background">#FFF</color>
+</resources>

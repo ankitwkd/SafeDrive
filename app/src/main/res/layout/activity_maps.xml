@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.wkdnotes.root.safedrivescratch.MapsActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#1a1a1a">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#007bff"
+            android:elevation="15dp"
+            android:clickable="true"
+            android:onClick="route"
+            android:src="@drawable/ic_directions_white" />
+    </fragment>
+
+    <RelativeLayout
+        android:layout_marginTop="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/card_view"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp">
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"/>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPEED"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#faad1e"
+        android:textSize="30dp" />
+
+</RelativeLayout>

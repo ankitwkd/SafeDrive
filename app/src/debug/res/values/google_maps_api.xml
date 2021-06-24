@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=92:07:93:65:37:F7:F2:72:F8:EE:79:E3:6B:A1:C6:F5:CF:B8:BB:14%3Bhu.pe.yummykart.polylineroutemap
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    92:07:93:65:37:F7:F2:72:F8:EE:79:E3:6B:A1:C6:F5:CF:B8:BB:14
+
+    SHA-1 certificate fingerprint:
+    92:07:93:65:37:F7:F2:72:F8:EE:79:E3:6B:A1:C6:F5:CF:B8:BB:14
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA3jwY7VSvWw9B-qN0Lguxc3VYoSvmP-kk</string>
+</resources>

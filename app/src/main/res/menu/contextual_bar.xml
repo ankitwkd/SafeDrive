@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Back"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_launcher_background"
+        android:id="@+id/back"
+        />
+    <item
+        android:title="Correct"
+        android:id="@+id/right"
+        android:icon="@drawable/ic_check_black_24dp"
+        app:showAsAction="ifRoom"
+        />
+</menu>

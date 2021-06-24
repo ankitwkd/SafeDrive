@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@color/black"
+    tools:context="com.wkdnotes.root.safedrivescratch.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg"/>
+
+    <RelativeLayout
+        android:id="@+id/speedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_alignParentTop="true">
+
+        <com.github.anastr.speedviewlib.PointerSpeedometer
+            android:id="@+id/pointerSpeedometer"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_gradient"
+            app:sv_centerCircleColor="#f9a205"
+            app:sv_indicatorColor="#f9a205"
+            app:sv_markColor="#00ffff"
+            app:sv_pointerColor="#f9a205"
+            app:sv_textSize="15dp"
+            fab:sv_backgroundCircleColor="@color/black"
+            fab:sv_speedTextColor="#00ffff"
+            fab:sv_speedTextSize="30dp"
+            fab:sv_speedometerColor="#2ab3ea"
+            fab:sv_textColor="#00ffff"
+            fab:sv_unitSpeedInterval="@dimen/common_circle_width"
+            fab:sv_unitTextColor="#00ffff"
+            fab:sv_unitTextSize="17dp" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/avi"
+            fab:indicatorColor="#f9a205"
+            android:layout_centerInParent="true"
+            app:indicatorName="BallClipRotatePulseIndicator"
+            />
+        <Chronometer
+            android:id="@+id/timeValue"
+            android:fontFamily="@font/digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:textColor="#00ffff"
+            android:textAppearance="@style/custom_name"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/iv_map"
+            android:layout_marginTop="7dp"
+            android:clickable="true"
+            android:src="@drawable/map"/>
+
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/settings"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignEnd="@+id/pointerSpeedometer"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13dp"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_settings_black_24dp"
+            fab:fab_colorNormal="@color/red"
+            fab:fab_type="mini" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/iv_settings"
+            android:src="@drawable/ic_settings"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"/>
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/priority"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="priority"
+            android:scaleType="center"
+            android:src="@drawable/ic_contact_phone_black_24dp"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_type="mini" />
+
+        <ImageView
+            android:id="@+id/cellNetwork"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cell_tower_1"
+            android:onClick="satelliteStatus"/>
+
+        <TextView
+            android:id="@+id/satStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cellNetwork"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speedLayout"
+        android:layout_margin="5dp"
+        android:id="@+id/relativeLayout">
+
+        <View
+            android:id="@+id/separator0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:background="@color/grey_lighter" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maxSpeedTitle"
+            android:text="Max Speed"
+            android:textStyle="normal"
+            android:textSize="25dp"
+            android:textColor="#faad1e"
+            android:fontFamily="@font/digital"
+            android:shadowColor="#fbb637"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:layout_margin="5dp"
+            android:layout_below="@id/separator0"
+            />
+
+        <TextView
+            android:id="@+id/maxSpeedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#faad1e"
+            android:layout_above="@+id/separator1"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/digital"
+            android:textSize="23dp" />
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/maxSpeedTitle"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/avgSpeedTitle"
+            android:textStyle="normal"
+            android:text="Average Speed"
+            android:shadowColor="#fbb637"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:fontFamily="@font/digital"
+            android:layout_margin="5dp"
+            android:textColor="#faad1e"
+            android:layout_below="@id/separator1"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/averageSpeedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:textColor="#faad1e"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/digital"
+            android:layout_below="@id/separator1"
+            android:layout_alignParentRight="true"/>
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/averageSpeedValue"></View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:textSize="25dp"
+            android:fontFamily="@font/digital"
+            android:id="@+id/distanceTitle"
+            android:textColor="#faad1e"
+            android:shadowColor="#fbb637"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:layout_margin="5dp"
+            android:layout_below="@id/separator2"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceValue"
+
+            android:fontFamily="@font/digital"
+            android:textSize="23dp"
+            android:textColor="#faad1e"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/separator2"/>
+        <View
+            android:id="@+id/separator3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/distanceTitle"></View>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:id="@+id/status"
+        android:layout_below="@id/relativeLayout"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:onClick="fabClick"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        android:layout_gravity="center_horizontal"
+        fab:fab_colorNormal="#660000"
+        fab:fab_colorPressed="@color/blue_light"
+        fab:fab_colorRipple="@color/blue_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/reset"
+        android:onClick="resetCall"
+        fab:fab_type="mini"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_restore_black_24dp"
+        android:layout_gravity="center_horizontal"
+        fab:fab_colorNormal="@color/blue"
+        fab:fab_colorPressed="@color/blue_light"
+        fab:fab_colorRipple="@color/blue_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/fab" />
+
+
+</RelativeLayout>

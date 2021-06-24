@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Speed"
+        >
+
+        <SwitchPreference
+            android:key="miles_per_hour"
+            android:title="@string/pref_miles_per_hour"
+            android:defaultValue="false"
+            android:summary="@string/pref_miles_per_hour_summary"
+            />
+        <SwitchPreference
+            android:key="warning_speed_limit"
+            android:title="Warning Speed Limit"
+            android:summary=""/>
+        <EditTextPreference
+            android:defaultValue="40"
+            android:key="custom_speed"
+            android:title="Set Custom Speed"
+            android:summary=""/>
+        <EditTextPreference
+            android:defaultValue="40"
+            android:key="custom_dnd_speed"
+            android:summary=""
+            android:title="Set Custom Driving Mode Speed"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Additional Feature">
+        <SwitchPreference
+            android:key="voice_feature"
+            android:title="Enable Voice Feature"
+            android:summary=""
+            android:defaultValue="false"
+            />
+        <SwitchPreference
+            android:key="sms_feature"
+            android:title="Message Feature"
+            android:summary=""/>
+        <EditTextPreference
+            android:key="custom_sms"
+            android:title="Set Message"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="About Us">
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
